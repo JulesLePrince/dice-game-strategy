@@ -1,6 +1,6 @@
 # Simple Dice Game Strategy
 ## <u>Règles du jeu</u>
-Il s’agit d’un jeu de dé à un seul joueur. On fixe un nombre de coups maximum.
+Il s’agit d’un jeu de dé à un seul joueur. On fixe un nombre de lancers maximum.
 A chaque coup, le joueur lance un dé et décide si :
 <ul>
     <li>il empoche le montant indiqué par le dé</li>
@@ -23,7 +23,7 @@ et f : nombre de faces du dé</em>
 
 ---
 
-Cette formule ne marche que pour le prochain lancer. Si on a un nombre n de lancers restants, du fait qu'ils soient tous indépendants, la probabilité 
+Cette formule ne marche que pour le prochain lancer. Si on a un nombre n de lancers restants, du fait que les événements soient tous indépendants les uns des autres, la probabilité 
 d’obtenir un nombre inférieur ou égal au nombre actuel sur tous les prochains lancers :
 
 
