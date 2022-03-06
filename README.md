@@ -13,10 +13,10 @@ Si le nombre de lancers atteint 0, alors le joueur empoche le montant indiqué p
 Premièrement nous avons cherché quelle était la probabilité lorsqu'on a un certain nombre sur le dé, d’obtenir un nombre 
 inférieur ou égal au prochain lancer. Nous avons trouvé : 
 
-
-<img align="left" width="44" height="164" src="readme_data/images/frac_d_f.png#gh-light-mode-only">
-<img align="left" width="44" height="164" src="readme_data/images/frac_d_f_darkmode.png#gh-dark-mode-only">
-
+<p align="center">
+    <img width="44" height="164" src="readme_data/images/frac_d_f.png#gh-light-mode-only">
+    <img width="44" height="164" src="readme_data/images/frac_d_f_darkmode.png#gh-dark-mode-only">
+</p>
 
 <em>avec d : nombre indiqué par le dé
 et f : nombre de faces du dé</em>
