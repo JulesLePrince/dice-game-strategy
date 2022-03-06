@@ -25,6 +25,6 @@ Cette formule ne marche que pour le prochain lancer. Si on a un nombre n de lanc
 d’obtenir un nombre inférieur ou égal au nombre actuel sur tous les prochains lancers :
 
 <p align="center">
-    <img width="186" height="178" src="readme_data/images/left(_frac_d_f_r.png#gh-light-mode-only">
-    <img width="186" height="178" src="readme_data/images/left(_frac_d_f_r-1_darmode.png#gh-dark-mode-only">
+    <img width="124" height="118,66" src="readme_data/images/left(_frac_d_f_r.png#gh-light-mode-only">
+    <img width="124" height="118,66" src="readme_data/images/left(_frac_d_f_r-1_darmode.png#gh-dark-mode-only">
 </p>
