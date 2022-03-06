@@ -1,10 +1,10 @@
 # Simple Dice Game Strategy
 ## <u>Règles du jeu</u>
-Il s’agit d’un jeu de dé à un seul joueur. On fixe un nombre de coups maximum, disons N=5 coups.
-A chaque coup, le joueur lance un dé et décide :
+Il s’agit d’un jeu de dé à un seul joueur. On fixe un nombre de coups maximum.
+A chaque coup, le joueur lance un dé et décide si :
 <ul>
-    <li>s’il empoche le montant indiqué par le dé</li>
-    <li>s'il relance le dé (pour espérer gagner plus)</li>
+    <li>il empoche le montant indiqué par le dé</li>
+    <li>il relance le dé (pour espérer gagner plus)</li>
 </ul>
 
 Si le nombre de lancers atteint 0, alors le joueur empoche le montant indiqué par le dé.
@@ -34,9 +34,13 @@ d’obtenir un nombre inférieur ou égal au nombre actuel sur tous les prochain
 
 ---
 
-Donc la probabilité qu’au moins un futur lancer sur les n prochains lancers soit supérieur au lancer actuel est l’événement contraire. Cela correspond à la probabilité d’augmenter les gains en continuant:
+Donc la probabilité qu’au moins un futur lancer sur les n prochains lancers soit supérieur au lancer actuel est l’événement contraire. Cela correspond à la probabilité 
+d’augmenter les gains en continuant:
 
 <p align="center">
     <img width="212" height="118,66" src="readme_data/images/1_-_left(_frac_d.png#gh-light-mode-only">
     <img width="212" height="118,66" src="readme_data/images/1_-_left(_frac_d_darmode.png#gh-dark-mode-only">
 </p>
+
+## <u>Stratégie</u> 
+La stratégie que nous proposons est donc de regarder cette probabilité et de relancer le dé tant qu’elle est supérieure à un certain nombre. Ce nombre est appelé Prudence.
