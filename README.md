@@ -1,2 +1,1 @@
-# dice-game-strategy
-Simple dice game strategy
+# Simple Dice Game Strategy
