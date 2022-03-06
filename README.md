@@ -11,4 +11,4 @@ Si le nombre de lancers atteint 0, alors le joueur empoche le montant indiqué p
 
 ## <u>Première approche, formule trouvée</u> 
 ![equation_light](readme_data/images/frac_d_f.png#gh-light-mode-only)
-![equation_dark](readme_data/images/frac_d_f-darkmode.png#gh-dark-mode-only)
+![equation_dark](readme_data/images/frac_d_f_darkmode.png#gh-dark-mode-only)
