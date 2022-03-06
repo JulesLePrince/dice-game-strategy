@@ -29,5 +29,14 @@ d’obtenir un nombre inférieur ou égal au nombre actuel sur tous les prochain
 
 <p align="center">
     <img width="124" height="118,66" src="readme_data/images/left(_frac_d_f_r.png#gh-light-mode-only">
-    <img width="124" height="118,66" src="readme_data/images/left(_frac_d_f_r-1_darmode.png#gh-dark-mode-only">
+    <img width="124" height="118,66" src="readme_data/images/left(_frac_d_f_r_darmode.png#gh-dark-mode-only">
+</p>
+
+---
+
+Donc la probabilité qu’au moins un futur lancer sur les n prochains lancers soit supérieur au lancer actuel est l’événement contraire. Cela correspond à la probabilité d’augmenter les gains en continuant:
+
+<p align="center">
+    <img width="212" height="118,66" src="readme_data/images/1_-_left(_frac_d.png#gh-light-mode-only">
+    <img width="212" height="118,66" src="readme_data/images/1_-_left(_frac_d_darmode.png#gh-dark-mode-only">
 </p>
