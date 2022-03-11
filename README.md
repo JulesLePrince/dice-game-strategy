@@ -54,13 +54,19 @@ jeu() chargée de simuler une partie et retourner le gain obtenu :
 ```python
 from random import randint
 
-def jeu(nb_lancers, nb_faces, prudence): # On prend en argument la prudence, le nb de lancers et le nb de faces
-    i = 1 # On définit i, les chances d'obtenir un meilleur dé au prochain lancer 
+
+def jeu(nb_faces:int, nb_lancers:int, prudence:float)->int:
+    """
+    On prend en argument la prudence, le nb de lancers et le nb de faces.
+    La prudence doit être comprise entre 0 et 1
+    """
     
-    while i >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur à la prudence/100
+    i = 1
+    
+    while i >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur à la prudence
         d = randint(1, nb_faces) # On “lance” le dé
         nb_lancers = nb_lancers - 1 # On enlève un au nombre de lancers
         i = 1-(d/nb_faces)**nb_lancers # On met à jour i
         
-    return d # On renvoie le gain lors de la partie simulée
+    return d # On renvoie le gain obtenu lors de la partie simulée
 ```
