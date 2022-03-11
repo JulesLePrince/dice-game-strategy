@@ -44,3 +44,23 @@ d’augmenter les gains en continuant:
 
 ## <u>Stratégie</u> 
 La stratégie que nous proposons est donc de regarder cette probabilité et de relancer le dé tant qu’elle est supérieure à un certain nombre. Ce nombre est appelé Prudence.
+
+
+## <u>Simulation</u> 
+Nous cherchons à obtenir 
+Afin de simuler un grand nombre de parties et estimer une moyenne des gains si l’on applique notre stratégie, nous avons créé un programme python. Détaillons notre fonction 
+jeu() chargée de simuler une partie et retourner le gain obtenu :
+
+```python
+from random import randint
+
+def jeu(nb_lancers, nb_faces, prudence): # On prend en argument la prudence, le nb de lancers et le nb de faces
+    i = 1 # On définit i, les chances d'obtenir un meilleur dé au prochain lancer 
+    
+    while i >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur à la prudence/100
+        d = randint(1, nb_faces) # On “lance” le dé
+        nb_lancers = nb_lancers - 1 # On enlève un au nombre de lancers
+        i = 1-(d/nb_faces)**nb_lancers # On met à jour i
+        
+    return d # On renvoie le gain lors de la partie simulée
+```
