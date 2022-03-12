@@ -75,7 +75,7 @@ def jeu(nb_faces:int, nb_lancers:int, prudence:float)->int:
 Nous pouvons donc maintenant simuler un grand nombre de lancers et calculer la moyenne des gains pour différentes prudences puis tracer un graphique :
 
 <p align="center">
-    <img width="640" height="480" src="readme_data/images/simulation_plot.png#gh-light-mode-only">
+    <img width="640" height="480" src="readme_data/images/simulation_plot.png">
     <figcaption align = "center"><b>Moyenne des gains en fonction de la prudence pour nb_faces = 4  , nb_lancers = 2 et nb_simulations = 100000
 </b></figcaption>
 
