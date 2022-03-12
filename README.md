@@ -75,5 +75,5 @@ Nous pouvons donc maintenant simuler un grand nombre de lancers et calculer la m
 
 <p align="center">
     <img width="640" height="480" src="readme_data/images/simulation_plot.png#gh-light-mode-only">
-    <img width="640" height="480" src="readme_data/images/simulation_plot_dark.png.png#gh-dark-mode-only">
+    <img width="640" height="480" src="readme_data/images/simulation_plot_dark.png#gh-dark-mode-only">
 </p>
