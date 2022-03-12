@@ -63,10 +63,17 @@ def jeu(nb_faces:int, nb_lancers:int, prudence:float)->int:
     
     i = 1
     
-    while i >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur à la prudence
+    while i >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur ou égal à la prudence
         d = randint(1, nb_faces) # On “lance” le dé
         nb_lancers = nb_lancers - 1 # On enlève un au nombre de lancers
         i = 1-(d/nb_faces)**nb_lancers # On met à jour i
         
     return d # On renvoie le gain obtenu lors de la partie simulée
 ```
+
+
+Nous pouvons donc maintenant simuler un grand nombre de lancers et calculer la moyenne des gains pour différentes prudences puis tracer un graphique :
+
+<p align="center">
+    <img width="320" height="240" src="readme_data/images/simulation_plot.png#gh-light-mode-only">
+</p>
