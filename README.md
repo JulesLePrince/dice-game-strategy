@@ -85,10 +85,10 @@ prudence. Nous avons donc décidé de créer un algorithme construisant l'arbre.
 qu'une nouvelle branche est créée seulement si a est supérieur ou égal à la prudence. En additionnant les issues 
 on a le pourcentage de chance _P_ pour chaque entier de 1 à n (n étant le nombre de faces du dé).
 <p align="center">
-    <img width="640" height="480" src="readme_data/images/algo_schema.png">
+    <img width="868" height="668" src="readme_data/images/algo_schema.png">
 </p>
 
 Par la suite on peut calculer une moyenne pondérée de cette manière : 
 <p align="center">
-    <img width="640" height="480" src="readme_data/images/moyenne_ponderee.png">
+    <img width="144" height="144" src="readme_data/images/moyenne_ponderee.png">
 </p>
