@@ -79,12 +79,16 @@ Nous pouvons donc maintenant simuler un grand nombre de lancers et calculer la m
 </p>
 
 ## <u>Calcul</u>
-La simulation nous donne déjà un bon aperçu mais nous avons essayé de calculer la moyenne des gains.
+La simulation nous donne déjà un bon aperçu, mais nous avons essayé de calculer la moyenne des gains.
 Le problème que nous rencontrons est que nous relançons le dé seulement si le nombre a est supérieur ou égal à la 
 prudence. Nous avons donc décidé de créer un algorithme construisant l'arbre. L'arbre à donc une particularité qui est
 qu'une nouvelle branche est créée seulement si a est supérieur ou égal à la prudence. En additionnant les issues 
-on a le pourcentage de chance _Pn_ de finir avec le dé de valeur n.
+on a le pourcentage de chance _P_ pour chaque entier de 1 à n (n étant le nombre de faces du dé).
 <p align="center">
     <img width="640" height="480" src="readme_data/images/algo_schema.png">
 </p>
 
+Par la suite on peut calculer une moyenne pondérée de cette manière : 
+<p align="center">
+    <img width="640" height="480" src="readme_data/images/moyenne_ponderee.png">
+</p>
