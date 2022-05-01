@@ -89,6 +89,7 @@ on a le pourcentage de chance _P_ pour chaque entier de 1 à n (n étant le nomb
 </p>
 
 Par la suite on peut calculer une moyenne pondérée de cette manière : 
+
 <p align="center">
     <img width="440" height="31" src="readme_data/images/moyenne_ponderee.png">
 </p>
