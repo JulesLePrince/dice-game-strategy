@@ -100,7 +100,7 @@ Par la suite on peut calculer une moyenne pondérée :
 
 ---
 
-Nous pouvons donc maintenant calculer un grand la moyenne des gains pour différentes prudences puis tracer un graphique :
+Nous pouvons donc maintenant calculer la moyenne des gains pour différentes prudences puis tracer un graphique :
 <p align="center">
     <img width="640" height="480" src="readme_data/images/calcul_plot.png">
 </p>
