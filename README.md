@@ -35,10 +35,10 @@ d’obtenir un nombre inférieur ou égal au nombre actuel sur tous les prochain
 ---
 
 Donc la probabilité qu’au moins un futur lancer sur les n prochains lancers soit supérieur au lancer actuel est 
-l’événement contraire. Cela correspond à la probabilité d’augmenter les gains en continuant qu'on note m : 
+l’événement contraire. Cela correspond à la probabilité d’augmenter les gains en continuant qu'on note a : 
 
 <p align="center">
-    <img width="320" height="118.66" src="readme_data/images/m.png">
+    <img width="302.6" height="118.66" src="readme_data/images/a.png">
 </p>
 
 ## <u>Stratégie</u> 
