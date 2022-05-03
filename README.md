@@ -88,8 +88,10 @@ on a le pourcentage de chance _P_ pour chaque entier de 1 à n (n étant le nomb
     <img width="868" height="668" src="readme_data/images/algo_schema.png">
 </p>
 
-Par la suite on peut calculer une moyenne pondérée de cette manière : 
+Par la suite on peut calculer une moyenne pondérée : 
 
 <p align="center">
-    <img width="440" height="31" src="readme_data/images/moyenne_ponderee.png">
+    <img width="756" height="37" src="readme_data/images/moyenne_ponderee.png">
 </p>
+
+Nous pouvons donc maintenant calculer un grand la moyenne des gains pour différentes prudences puis tracer un graphique :
