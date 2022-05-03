@@ -59,14 +59,14 @@ def jeu(nb_faces:int, nb_lancers:int, prudence:float)->int:
     La prudence doit être comprise entre 0 et 1
     """
     
-    i = 1
-    
-    while i >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur ou égal à la prudence
-        d = randint(1, nb_faces) # On “lance” le dé
-        nb_lancers = nb_lancers - 1 # On enlève un au nombre de lancers
-        i = 1-(d/nb_faces)**nb_lancers # On met à jour i
+        a = 1
         
-    return d # On renvoie le gain obtenu lors de la partie simulée
+        while a >= prudence and nb_lancers > 0: # On continue le jeu tant qu’il reste au moins un lancer et que i est supérieur ou égal à la prudence
+            d = randint(1, nb_faces) # On “lance” le dé
+            nb_lancers = nb_lancers - 1 # On enlève un au nombre de lancers
+            a = 1-(d/nb_faces)**nb_lancers # On met à jour i
+            
+        return d # On renvoie le gain obtenu lors de la partie simulée
 ```
 
 

@@ -15,13 +15,13 @@ class Simu:
         
         
     def jeu(self):
-        i = 1
+        a = 1
         nb_lancers = self.nb_lancers
         
-        while i >= self.prudence and nb_lancers > 0:
+        while a >= self.prudence and nb_lancers > 0:
             d = rnd.randint(1, self.nb_faces)
             nb_lancers = nb_lancers - 1
-            i = 1-(d/self.nb_faces)**nb_lancers
+            a = 1-(d/self.nb_faces)**nb_lancers
             
         return d
     
