@@ -15,7 +15,11 @@ class Tree:
             self.data[i] = 0
     
     
-    def make_tree(self, lancers, faces):
+    def make_tree(self, lancers=None, faces=None):
+        if lancers is None:
+            lancers = self.nb_lancers
+        if faces is None:
+            faces = self.nb_faces
         
         # On enlève un lancer
         lancers = lancers - 1
@@ -30,7 +34,7 @@ class Tree:
             a = 1-(i/faces)**lancers
             
             
-            # Si a est supérieur à tem et qu'il reste des lancers on rempli une nouvelle branche par recursion
+            # Si a est supérieur à prudence et qu'il reste des lancers on rempli une nouvelle branche par recursion
             if a >= self.prudence and lancers != 0:
                 node[i] = self.make_tree(lancers, faces)
                 
@@ -65,7 +69,7 @@ graph['y'] = []
 for i in range(101):
     graph['x'].append(i/100)
     tree = Tree(nb_faces, nb_lancers, i/100)
-    tree.make_tree(tree.nb_lancers, tree.nb_faces)
+    tree.make_tree()
     graph['y'].append(tree.esperance())
 
 

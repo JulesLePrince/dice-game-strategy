@@ -34,12 +34,11 @@ d’obtenir un nombre inférieur ou égal au nombre actuel sur tous les prochain
 
 ---
 
-Donc la probabilité qu’au moins un futur lancer sur les n prochains lancers soit supérieur au lancer actuel est l’événement contraire. Cela correspond à la probabilité 
-d’augmenter les gains en continuant:
+Donc la probabilité qu’au moins un futur lancer sur les n prochains lancers soit supérieur au lancer actuel est 
+l’événement contraire. Cela correspond à la probabilité d’augmenter les gains en continuant qu'on note m : 
 
 <p align="center">
-    <img width="212" height="118,66" src="readme_data/images/1_-_left(_frac_d.png#gh-light-mode-only">
-    <img width="212" height="118,66" src="readme_data/images/1_-_left(_frac_d_darmode.png#gh-dark-mode-only">
+    <img width="320" height="118.66" src="readme_data/images/m.png">
 </p>
 
 ## <u>Stratégie</u> 
@@ -48,7 +47,7 @@ La stratégie que nous proposons est donc de regarder cette probabilité et de r
 
 ## <u>Simulation</u> 
 Afin de simuler un grand nombre de parties et estimer une moyenne des gains si l’on applique notre stratégie, nous avons créé un programme python. Détaillons notre fonction 
-jeu() chargée de simuler une partie et retourner le gain obtenu :
+```jeu()``` chargée de simuler une partie et retourner le gain obtenu :
 
 ```python
 from random import randint
@@ -81,9 +80,12 @@ Nous pouvons donc maintenant simuler un grand nombre de lancers et calculer la m
 ## <u>Calcul</u>
 La simulation nous donne déjà un bon aperçu, mais nous avons essayé de calculer la moyenne des gains.
 Le problème que nous rencontrons est que nous relançons le dé seulement si le nombre a est supérieur ou égal à la 
-prudence. Nous avons donc décidé de créer un algorithme construisant l'arbre. L'arbre à donc une particularité qui est
-qu'une nouvelle branche est créée seulement si a est supérieur ou égal à la prudence. En additionnant les issues 
-on a le pourcentage de chance _P_ pour chaque entier de 1 à n (n étant le nombre de faces du dé).
+prudence. Nous avons donc décidé de créer un programme construisant l'arbre par récursvité. Le Programme est disponible
+dans le fichier ```calcul.py```
+L'arbre à donc une particularité qui est qu'une nouvelle branche est créée seulement si a est supérieur ou égal à la 
+prudence. En additionnant les issues on a le pourcentage de chance _P_ pour chaque entier de 1 à nb_faces.
+
+
 <p align="center">
     <img width="868" height="668" src="readme_data/images/algo_schema.png">
 </p>
